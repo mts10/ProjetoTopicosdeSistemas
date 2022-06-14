@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/secretaria.css">
+    <script src="../../js/secretaria/consultarAtividades.js" defer="defer"></script>
+    <title>Consultar Atividades</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Escola</label>
+        <ul>
+          <li><a class="active" href="../secretaria.html">Voltar</a></li>
+        </ul>
+     </nav>
+
+    <form class="form"> 
+        <fieldset class="consulta">
+            <legend>Escolha a atividade para buscar dados</legend>
+            <label for="atividade">Selecione a atividade extra desejada: </label>
+            <select name="atividade" id="select" required>
+                <option value="1">Música</option>
+                <option value="2">Dança</option>
+                <option value="3">Francês</option>
+                <option value="4">Culinária</option>
+                <option value="5">Computação</option>
+                <option value="6">Natação</option>
+                <option value="7">Educação Financeira</option>
+                <option value="8">Ginástica</option>
+            </select>
+        </fieldset>
+
+        <p>
+            <input id="button" type="submit" value="Consultar Atividade" onclick="getAtividadeExtra()">
+        </p>
+    </form>
+
+    <div id="atividadeExtra"></div>
+</body>
+</html>

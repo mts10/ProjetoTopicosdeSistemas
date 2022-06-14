@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/responsavel.css">
+    <script src="../../js/responsavel/consultarConteudos.js" defer="defer"></script>
+    <title>Conteúdos</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Escola</label>
+        <ul>
+          <li><a href="../responsavel.html">Voltar</a></li>
+        </ul>
+    </nav>
+
+    <form class="form">
+      <fieldset>
+        <legend>Buscar conteúdo pelo código da matéria</legend>
+        <div>
+          <label for="codMateria">Digite o código da matéria para ter acesso ao conteúdo:</label><br>
+          <input type="number" name="codMateria" required size="45px" id="input" min="1" onchange="checkValue()">
+        </div>
+      </fieldset>
+
+      <p>
+        <input id="button" type="submit" name="responsavel" value="Buscar" onclick="getConteudos()" disabled>
+      </p>
+    </form>
+
+    <div id="conteudos"></div>
+</body>
+</html>

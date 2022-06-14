@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/secretaria.css">
+    <script src="../../js/secretaria/exportarNotas.js" defer="defer"></script>
+    <title>Exportar Notas</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Escola</label>
+        <ul>
+          <li><a class="active" href="../secretaria.html">Voltar</a></li>
+        </ul>
+     </nav>
+
+    <form class="form"> 
+        <fieldset class="exportar">
+            <legend>Escolha a turma para exportar notas</legend>
+            <div>
+                <label for="serie">Selecione um série: </label>
+                <select name="serie" required id="select">
+                    <option value="1">1ª série</option>
+                    <option value="2">2ª série</option>
+                    <option value="3">3ª série</option>
+                    <option value="4">4ª série</option>
+                    <option value="5">5ª série</option>
+                    <option value="6">6ª série</option>
+                    <option value="7">7ª série</option>
+                    <option value="8">8ª série</option>
+                    <option value="9">9ª série</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="turno">
+            <legend>Escolha o turno da turma</legend>
+            <div>
+                <input type="radio" name="turno" required value="1" checked>
+                <label for="turno">Manhã</label>
+                <input type="radio" name="turno" required value="2">
+                <label for="turno">Tarde</label>
+            </div>
+        </fieldset>
+
+        <p>
+            <input id="button" type="submit" value="Exportar Notas" onclick="getNotas()">
+        </p>
+    </form>
+
+    <div id="notasTurma">
+    </div>
+</body>
+</html>

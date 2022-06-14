@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(#042d04, #154a15);
+    color: #ffffff;
+    font-size: 25px;
+    border: none;
+}
+
+.responsavelAncor{
+    padding-left: 10px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+.list li{
+    padding: 30px;
+    border-bottom: 1px solid #154a15;
+}
+
+
+.responsavelAncor:hover{
+    font-size: 20px;
+    background: linear-gradient(#042d04, #154a15);
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.form{
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    margin: 20px;
+    height: 400px;
+    width: 500px;
+    align-items: center;
+}
+
+.contato div{
+    padding-top: 20px;
+}
+
+input{
+    height: 20px;
+    width: 200px;
+}
+
+input:hover{
+    border: 1px solid #115e11;
+}
+
+#button{
+    margin-top: 30px;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+#button:hover{
+    transition: all 0.5s;
+    background: linear-gradient(#042d04, #154a15);
+    color: white;
+    font-size: 18px;
+    
+}
+
+.faltas {
+    height: 600px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.faltas li{
+    border-bottom: 1px solid #545454;
+}
+.relatorio {
+    height: 600px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.relatorio li{
+    border-bottom: 1px solid #545454;
+}
+
+.chat{
+    height: 570px;
+}
+
+.assunt{
+    margin-bottom: 20px;
+}
+
+textarea{
+    height: 200px;
+    width: 300px;
+    margin-top: 5px;
+    padding: 5px;
+}

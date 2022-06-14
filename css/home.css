@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  :root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e; 
+  
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    
+  }
+
+  body{
+    
+    font-family: var(--fonte-padrao);
+  }
+
+  button{
+    background-color: #025213; 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    padding-right: 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+
+  nav{
+    background: #025213;
+    height: 80px;
+    width: 100%;
+  }
+
+  
+
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+
+  nav ul li a{
+    color: white;
+    font-size: 13px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  a.active,a:hover{
+    background: #012c0b;
+    transition: .5s;
+  }
+
+  .checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+
+    nav ul li a{
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #012c0b;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+
+    nav ul li a{
+      font-size: 13px;
+    }
+
+    a:hover,a.active{
+      background: none;
+      color: #025213;
+    }
+
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+  main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  
+    }
+  
+   main > h1 {
+    color: #92a5de;
+    text-shadow: 0px 0px 0 #899CD5, 1px 1px 0 #8194CD, 2px 2px 0 #788BC4, 3px 3px 0 #6F82BB, 4px 4px 0 #677AB3, 5px 5px 0 #5E71AA, 6px 6px 0 #5568A1, 7px 7px 0 #4C5F98, 8px 8px 0 #445790, 9px 9px 0 #3B4E87, 10px 10px 0 #32457E, 11px 11px 0 #2A3D76, 12px 12px 0 #21346D, 13px 13px 0 #182B64, 14px 14px 0 #0F225B, 15px 15px 0 #071A53, 16px 16px 0 #02114A, 17px 17px 0 #0B0841, 18px 18px 0 #130039, 19px 19px 0 #1C0930, 20px 20px 0 #251227, 21px 21px 20px rgba(0,0,0,1), 21px 21px 1px rgba(0,0,0,0.5), 0px 0px 20px rgba(0,0,0,.2);
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  h4{
+    text-align: center;
+  }
+ main > p {
+  margin: 15px 0px;
+  font-family: var(--fonte-padrao);
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1em;
+  line-height: 2em;
+ }
+  main img{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    div.video{
+      background-color: white;
+      margin: 0px, -20px 30px, -20px;
+      padding: 20px;
+      padding-bottom: 55%;
+      position: relative;
+      margin-bottom: 30px;
+  }
+  div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  
+  }

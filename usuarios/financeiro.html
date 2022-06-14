@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/financeiro.css">
+    <script type="text/javascript" src="../js/financeiro.js" defer="defer"></script>
+    <title>Gerar Boleto de Atividades</title>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Escola</label>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="aluno.html">Aluno</a></li>
+      <li><a href="responsavel.html">Responsáveis</a></li>
+      <li><a href="professor.html">Professor</a></li>
+      <li><a href="secretaria.html">Secretaria</a></li>
+      <li><a class="active" href="financeiro.html">Financeiro</a></li>
+    </ul>
+  </nav>
+
+  <form class="form"> 
+    <fieldset>
+      <legend>Gerar boleto com o valor das atividades extras de alunos</legend>
+      <div>
+        <label for="ra">Digite o RA do aluno para gerar boleto de atividades extras:</label>
+        <input type="number" name="ra" required size="45px" id="ra" min="1" onchange="checkValue()">
+      </div>
+    </fieldset>
+
+    <p>
+      <input type="submit" id="button" onclick="getContas()" disabled value="Gerar Boleto">
+    </p>
+  </form>
+
+  <div id="boleto"></div>
+</body>
+</html>

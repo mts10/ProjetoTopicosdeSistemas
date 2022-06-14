@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/responsavel.css">
+    <script src="../../js/responsavel/matricula.js" defer="defer"></script>
+    <title>Matrícula</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Escola</label>
+        <ul>
+          <li><a href="../responsavel.html">Voltar</a></li>
+        </ul>
+    </nav>
+
+    <form class="form" class="matricula" id="form"> 
+        <fieldset class="aluno">
+            <legend>Informe os dados do aluno</legend>
+            <div>
+                <label for="nome">Digite o nome completo do aluno:</label>
+                <input type="text" name="nome" required onchange="checkValue()" id="nomeAluno">
+            </div>
+
+            <div>
+                <label for="doc">Informe o documento do aluno:</label>
+                <input type="number" name="doc" onchange="checkValue()" id="docAluno">
+                <input type="radio" name="tipoDoc" required value="1" checked>
+                <label for="rg">RG</label>
+                <input type="radio" name="tipoDoc" required value="2">
+                <label for="cpf">CPF</label>
+            </div>
+
+            <div>
+                <label for="idade">Informe a idade do aluno:</label>
+                <input type="date" name="idade" required onchange="checkValue()" id="idade">
+            </div>
+
+            <div>
+                <label for="nomeMae">Informe o nome da mãe:</label>
+                <input type="text" name="nomeMae" required onchange="checkValue()" id="nomeMae"><br>
+                <label for="docMae">CPF da mãe:</label>
+                <input type="number" name="docMae" required onchange="checkValue()" id="docMae">
+            </div>
+
+            <div>
+                <label for="sexo">Informe o sexo do aluno:</label>
+                <input type="radio" name="tipo" required value="F" checked>
+                <label for="rg">F</label>
+                <input type="radio" name="tipo" required value="M">
+                <label for="cpf">M</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="serieSede">
+            <legend>Escolha série do aluno</legend>
+            <div>
+                <label for="serie">Selecione a série em o aluno será matriculado: </label>
+                <select name="serie" required>
+                    <option value="1">1ª série</option>
+                    <option value="2">2ª série</option>
+                    <option value="3">3ª série</option>
+                    <option value="4">4ª série</option>
+                    <option value="5">5ª série</option>
+                    <option value="6">6ª série</option>
+                    <option value="7">7ª série</option>
+                    <option value="8">8ª série</option>
+                    <option value="9">9ª série</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="sede">Selecione a sede da matrícula: </label>
+                <select name="sede" required>
+                    <option value="1">Sede 1</option>
+                    <option value="2">Sede 2</option>
+                    <option value="3">Sede 3</option>
+                    <option value="4">Sede 4</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha atividades extras</legend>
+            <div>
+                <input type="checkbox" value="1">
+                <label>Música</label>
+                <input type="checkbox" value="2">
+                <label>Dança</label>
+                <input type="checkbox" value="3">
+                <label>Francês</label><br>
+                <input type="checkbox" value="4">
+                <label>Culinária</label>
+                <input type="checkbox" value="5">
+                <label>Computação</label>
+                <input type="checkbox" value="6">
+                <label>Natação</label><br>
+                <input type="checkbox" value="7">
+                <label>Educação Financeira</label>
+                <input type="checkbox" value="8">
+                <label>Ginástica</label>
+            </div>
+        </fieldset>
+
+        <p>
+          <input id="button" type="submit" value="Matricular" onclick="getMatriculaResponse()" disabled>
+        </p>
+    </form>
+
+    <div id="matriculaResponse"></div>
+</body>
+</html>

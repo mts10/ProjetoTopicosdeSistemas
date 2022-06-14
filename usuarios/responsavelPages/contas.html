@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/responsavel.css">
+    <script src="../../js/responsavel/contasPagar.js" defer="defer"></script>
+    <title>Acadêmico</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Escola</label>
+        <ul>
+          <li><a href="../responsavel.html">Voltar</a></li>
+        </ul>
+    </nav>
+
+    <form class="form"> 
+        <fieldset>
+            <legend>Escolha como deseja receber o boleto da mensalidade vigente</legend>
+            <div>
+                <input type="radio" name="tipo" required value="1" checked>
+                <label for="tipo">SMS (Apenas o número)</label>
+            </div>
+            <div>
+                <input type="radio" name="tipo" required value="2">
+                <label for="tipo">Email (PDF)</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="ra">
+            <legend>Digite o RA do aluno para gerar o boleto referente às disciplinas</legend>
+            <div>
+                <label for="registro">Digite o registro acadêmico do aluno:</label><br>
+                <input type="number" id="input" required min="1" name="registro" onchange="checkValue()">
+            </div>
+        </fieldset>
+
+        <p>
+          <input id="button" type="submit" value="Enviar" disabled onclick="getContas()">
+        </p>
+    </form>
+
+    <div id="boleto"></div>
+</body>
+</html>

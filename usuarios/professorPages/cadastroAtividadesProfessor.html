@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/professor.css">
+    <script src="../../js/professor/atividade.js" defer="defer"></script>
+    <title>Acadêmico</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check"> 
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Escola</label>
+        <ul>
+          <li><a href="../professor.html">Voltar</a></li>
+        </ul>
+    </nav>
+    <div class="contato">
+        <form class="form" action="" method="post">
+            <h1 class="title">Cadastro - Cadastro Atividades Extras</h1>
+            <div>
+                <label for="idAluno">Digite o id do aluno:</label><br>
+                <input type="number" name="idAluno" id="idAluno" required>
+            </div>
+            <div>
+                <label for="email">Digite o email do aluno:</label><br>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="atividadeExtra">Digite o nome da atividade extra:</label><br>
+                <input type="text" name="atividadeExtra" id="atividadeExtra">
+            </div>
+        <p>
+            <input id="button" type="submit" name="atividadealuno" value="Enviar" onclick="getAtividades()">
+        </p>
+        </form>
+    </div>
+    <div id="resposta"></div>
+</body>
+</html>

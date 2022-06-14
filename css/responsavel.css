@@ -1,0 +1,187 @@
+.title {
+    padding: 40px;
+    font-family: montserrat;
+    font-size: 35px;
+}
+
+.respDiv {
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    margin: 25px;
+}
+
+.responsavelForm {
+    font-size: 27px;
+    padding: 10px;
+}
+
+.form {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+fieldset, legend {
+    padding: 5px;
+}
+
+.responsavelAncor {
+    color: black;
+}
+
+.aluno, .serieSede {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.aluno div, .serieSede div {
+    padding: 5px;
+    text-align: left;
+}
+
+.responsavelAncor:hover  {
+    background-color: white;
+    text-decoration: underline;
+    color: black;
+}
+
+.contato {
+    margin-bottom: 25px;
+}
+
+.contato div, .atualizar div {
+    padding: 5px;
+}
+
+#button {
+    margin-top: 10px;
+    font-size: 25px;
+    width: 25%;
+    padding: 2px;
+}
+
+/* Estilo da página de consultar vida academica */
+
+#informacoes, #conteudos {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    text-align: center;
+    min-width: 500px;
+    width: 35%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#informacoes p {
+    padding: 3px;
+    font-size: 20px
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 20px;
+    text-align: left;
+}
+
+td {
+    height: 20px;
+    vertical-align: bottom;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.tabelaInfo {
+    margin-top: 10px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+#naoEncontrado {
+    color: red;
+    font-size: 20px;
+}
+
+/* Estilo da página de consulta de conteúdos */
+
+.tabelaConteudos {
+    font-size: 20px;
+}
+
+.tabelaConteudos p {
+    padding: 3px;
+}
+
+.tabelaConteudos td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Estilo página de contas a pagar */
+
+.ra {
+    margin-top: 10px;
+}
+
+#dadosBoleto {
+    margin-top: 20px;
+    color: red;
+}
+
+#boleto, #matriculaResponse {
+    min-width: 350px;
+    margin-top: 10px;
+    padding: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#boleto {
+    width: 25%;
+}
+
+#boleto p, #matriculaResponse p {
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* Estilo da página de matrícula */
+
+#matriculaResponse {
+    position: relative;
+    width: 29%;
+    min-width: 450px;
+    min-height: 650px;
+    height: 650px;
+}
+
+.tituloMatricula {
+    text-align: center;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.matricularNovamente {
+    position: absolute;
+    margin-top: 25px;
+    font-size: 23px;
+    padding: 5px;
+    left: 32%;
+    cursor: pointer;
+}

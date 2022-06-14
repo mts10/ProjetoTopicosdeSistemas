@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/professor.css">
+    <script src="../../js/professor/consultarNotas.js" defer="defer"></script>
+    <title>Acadêmico</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Escola</label>
+        <ul>
+          <li><a href="../professor.html">Voltar</a></li>
+        </ul>
+    </nav>
+    <div class="contato">
+        <form class="form" action="" method="post">
+            <h1 class="title">Cadastro - Notas</h1>
+            <div>
+                <label for="idAluno">Digite o id do aluno:</label><br>
+                <input type="number" name="idAluno" id="idAluno" required>
+            </div>
+            <div>
+                <label for="idMateria">Digite o id materia:</label><br>
+                <input type="number" name="idMateria" id="idMateria">
+            </div>
+            <div>
+              <label for="notaprova">Digite a nota da prova:</label><br>
+              <input type="number" name="notaProva" id="notaProva">
+          </div>
+        <p>
+            <input id="button" type="submit" name="notasalunos" value="Enviar" onclick="getNotas()">
+        </p>
+        </form>
+    </div>
+    <div id="notas"></div>
+
+</body>
+</html>
